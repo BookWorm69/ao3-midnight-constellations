@@ -1,0 +1,735 @@
+#header {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/theme/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #081C3A;
+}
+
+#header .heading {
+  height: 15em;
+}
+
+#header .primary {
+  background: #071426;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+#header .logo,
+#header .heading sup {
+  visibility: hidden;
+}
+
+#header .heading a {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+}
+
+.event .userstuff {
+  background: #0D2F66;
+  border: 1px solid #ffffff;
+}
+
+#outer.wrapper {
+  background: #071426;
+  color: #ffffff;
+}
+
+#main a {
+  color: #ffffff;
+}
+
+#greeting a.dropdown-toggle,
+#header .actions a {
+  color: #ffffff !important;
+  text-shadow: 0px 0px 3px #081C3A;
+}
+
+#greeting .menu,
+#header .dropdown .menu,
+#header .dropdown:hover a {
+  background: #071426;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+span.submit.actions input.button {
+  display: none;
+}
+
+#greeting img.icon {
+  display: none;
+}
+
+#header #search .text,
+.search [role="tooltip"] {
+  background: #071426;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+  color: #ffffff !important;
+  border: 1px solid #071426;
+}
+
+form.search input[type=text],
+form.search input[type=submit],
+.autocomplete div.dropdown ul {
+  background: #071426 !important;
+  border: none;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  display: block;
+}
+
+#header #search .text {
+  width: 7em;
+}
+
+.notice,
+.comment_notice,
+.kudos_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash {
+  background: #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8) !important;
+  color: #071426;
+  border: none;
+}
+
+#main .notice a,
+#main .comment_notice a,
+#main .kudos_notice a,
+#main ul.notes a,
+#main .caution a,
+#main .error a,
+#main .comment_error a,
+#main .kudos_error a,
+#main .alert.flash a {
+  color: #071426 !important;
+  font-weight: bold;
+}
+
+.splash .module h3 {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.splash .favorite li:nth-of-type(2n+1) a {
+  background: #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+  color: #071426;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.splash .favorite li:nth-of-type(2n+2) a {
+  color: #ffffff;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 110%;
+}
+
+.splash .favorite li:nth-of-type(2n+1) a:hover,
+.splash .favorite li:nth-of-type(2n+2) a:hover {
+  color: #ffffff;
+  font-weight: bold;
+  font-variant: small-caps;
+  background: #0D2F66;
+}
+
+#footer {
+  background: #0D2F66;
+  color: #ffffff;
+  border-top: 3px solid #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+#footer a,
+#footer .heading {
+  color: #ffffff;
+}
+
+.actions a,
+.actions a:focus,
+.actions input:focus,
+.action:focus,
+.actions li input,
+.actions li input[type="submit"],
+input[type="submit"],
+.actions li label,
+ul.navigation.actions li a,
+.action:link,
+.actions a:link {
+  background: #0D2F66;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+.current,
+#dashboard .current {
+  background: #ffffff !important;
+  color: #071426 !important;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8) !important;
+  border-radius: 5px;
+}
+
+#dashboard.own {
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+#dashboard a:hover {
+  background: #071426;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+#dashboard a {
+  color: #ffffff;
+}
+
+dl.meta {
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+.listbox .index {
+  background: #071426;
+}
+
+.listbox,
+fieldset fieldset.listbox {
+  background: #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+form dl,
+fieldset,
+fieldset fieldset,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff,
+input,
+select,
+select:focus,
+textarea,
+span.symbol.question,
+.own {
+  background: #071426 !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+.autocomplete li.added,
+.post .meta dd ul li.added,
+label,
+label.required {
+  color: #ffffff;
+}
+
+span.delete {
+  background: #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+span.delete a {
+  color: #071426 !important;
+  font-weight: bold;
+}
+
+.ui-sortable li,
+.dynamic form,
+div.dynamic {
+  background: #071426;
+  border: 1px solid #ffffff;
+}
+
+.dropdown {
+  background: #071426;
+}
+
+form.verbose legend,
+.verbose form legend {
+  background: #ffffff;
+  color: #071426;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+li.blurb {
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+.draft {
+  background: #071426;
+  color: #ffffff;
+  border: 2px dashed #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+.draft .wrapper {
+  background: #071426;
+  border: 1px solid #ffffff;
+}
+
+#header h2 {
+  background: #ffffff !important;
+  color: #071426;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+#stat_chart svg rect:first-of-type {
+  opacity: 60%;
+}
+
+#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect,
+#stat_chart svg g:nth-of-type(2) > g rect:last-of-type,
+#stat_chart g[clip-path^=url] > g:nth-of-type(2) rect:first-of-type {
+  filter: hue-rotate(140deg);
+  opacity: 80% !important;
+}
+
+.statistics .index li:nth-of-type(2n) {
+  background: #071426;
+  border: 1px solid #ffffff;
+}
+
+.reading h4.viewed,
+dl.index dd,
+table,
+th,
+dt.child {
+  background: #071426;
+}
+
+#modal,
+span.replied {
+  background: #071426;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+h4.heading.byline {
+  background: #ffffff;
+  color: #071426;
+}
+
+li.comment {
+  border: 1px solid #ffffff;
+}
+
+.comment div.icon {
+  border-bottom: 5px solid #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+.thread .even {
+  background: #0D2F66;
+}
+
+.unread {
+  background: #071426;
+  border: 5px dashed #ffffff !important;
+}
+
+span.unread {
+  background: #ffffff;
+  color: #071426;
+}
+
+span.indicator::before {
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+.warnings .tag,
+.work .warning a.tag,
+dd.warning.tags a {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background: #ffffff;
+  padding-left: 2px;
+  padding-right: 2px;
+  box-shadow: 0px 0px 10px #ffffff;
+}
+
+.relationships .tag,
+.work .relationships a.tag,
+dd.relationship.tags a {
+  background: none;
+  color: #ffffff !important;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+}
+
+.filters .expander {
+  background: url("https://64.media.tumblr.com/3c89981f933f9f57157d6dcec6fd85a7/94c6737c6db9ad60-e5/s1280x1920/f7557e617a5439c506721bd326580a0cb4c1f8d8.png") left center no-repeat;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.filters .expanded .expander {
+  background: url("https://64.media.tumblr.com/dab095a2fd9387bc1e0c57747ba6b13f/94c6737c6db9ad60-ad/s1280x1920/c1a4e14e0565cdcac5d3e20bebac3ab440f2d607.png") left center no-repeat;
+}
+
+body {
+  background: #071426 !important;
+  color: #ffffff;
+}
+
+.blurb h4 a:visited {
+  color: #ffffff !important;
+}
+
+a.tag:hover,
+.tags a:hover,
+.work a.tag:hover {
+  background: #ffffff !important;
+  color: #071426 !important;
+  text-shadow: none !important;
+}
+
+.warnings .tag,
+.work .warning a.tag,
+dd.warning.tags a {
+  color: #071426 !important;
+}
+
+.current,
+#dashboard .current,
+span.delete a,
+span.unread,
+form.verbose legend,
+.verbose form legend,
+#header h2,
+h4.heading.byline {
+  color: #071426 !important;
+}
+
+#greeting .user > li {
+  background: rgba(13, 14, 31, 0.92);
+  color: #ffffff !important;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 0.02em 0.25em;
+  margin-left: 0.12em;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.45);
+}
+
+#greeting .user > li a,
+#greeting .user > li a:link,
+#greeting .user > li a:visited {
+  color: #ffffff !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+#greeting .user > li:hover {
+  background: #0D2F66;
+}
+
+#greeting .user > li:hover a {
+  color: #ffffff !important;
+}
+
+ul.required-tags,
+.bookmark .status span,
+.blurb .icon {
+  opacity: 1 !important;
+}
+
+img[src$="/images/skins/iconsets/default/icon_user.png"] {
+  box-sizing: border-box;
+  background: transparent !important;
+  border: 0 !important;
+  content: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/user-default.png");
+}
+
+.comment .icon .anonymous {
+  box-sizing: border-box;
+  border: 0 !important;
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/anonymous-comment.png") !important;
+  background-color: transparent !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.comment .icon .visitor {
+  box-sizing: border-box;
+  border: 0 !important;
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/guest-comment.png") !important;
+  background-color: transparent !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+img[src$="/images/skins/iconsets/default/icon_collection.png"] {
+  box-sizing: border-box;
+  background: transparent !important;
+  border: 0 !important;
+  content: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/collection.png");
+}
+
+.tagset .primary .icon,
+.tag .primary .icon,
+.index .tagset .icon {
+  box-sizing: border-box;
+  border: 0 !important;
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/tag.png") !important;
+  background-color: transparent !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.index .mystery .icon {
+  box-sizing: border-box;
+  border: 0 !important;
+  box-shadow: none !important;
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/unrevealed-work.png") !important;
+  background-color: transparent !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.admin .primary .icon {
+  box-sizing: border-box;
+  border: 0 !important;
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/admin.png") !important;
+  background-color: transparent !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.skins .primary .icon:not(:has(a .icon)),
+.index .skins .icon:not(:has(a .icon)) {
+  box-sizing: border-box;
+  border: 0 !important;
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/skin.png") !important;
+  background-color: transparent !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+#symbols-key dl img,
+#bookmark-symbols-key img {
+  width: 0 !important;
+  height: 0 !important;
+  padding: 25px 0 0 25px;
+}
+
+.blurb ul.required-tags li a > span,
+.bookmark p.status a > span,
+.bookmark p.status .count,
+#symbols-key dl img,
+#bookmark-symbols-key img {
+  box-sizing: border-box;
+  border: 0 !important;
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-origin: border-box;
+}
+
+.required-tags .rating-general-audience,
+img[src$="/images/skins/iconsets/default/rating-general-audience.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/rating-general.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .rating-teen,
+img[src$="/images/skins/iconsets/default/rating-teen.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/rating-teen.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .rating-mature,
+img[src$="/images/skins/iconsets/default/rating-mature.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/rating-mature.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .rating-explicit,
+img[src$="/images/skins/iconsets/default/rating-explicit.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/rating-explicit.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .category-femslash,
+img[src$="/images/skins/iconsets/default/category-femslash.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/category-ff.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .category-het,
+img[src$="/images/skins/iconsets/default/category-het.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/category-mf.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .category-gen,
+img[src$="/images/skins/iconsets/default/category-gen.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/category-gen.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .category-slash,
+img[src$="/images/skins/iconsets/default/category-slash.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/category-mm.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .category-multi,
+img[src$="/images/skins/iconsets/default/category-multi.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/category-multi.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .category-other,
+img[src$="/images/skins/iconsets/default/category-other.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/category-other.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .warning-choosenotto,
+img[src$="/images/skins/iconsets/default/warning-choosenotto.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/warning-choose-not-to.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .warning-yes,
+img[src$="/images/skins/iconsets/default/warning-yes.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/warning-yes.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .external-work,
+img[src$="/images/skins/iconsets/default/warning-external-work.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/warning-external-work.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .warning-no,
+.required-tags .rating-notrated,
+.required-tags .category-none,
+img[src$="/images/skins/iconsets/default/warning-no.png"],
+img[src$="/images/skins/iconsets/default/rating-notrated.png"],
+img[src$="/images/skins/iconsets/default/category-none.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/warning-no.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .complete-no,
+img[src$="/images/skins/iconsets/default/complete-no.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/complete-no.png") !important;
+  background-color: transparent !important;
+}
+
+.required-tags .complete-yes,
+img[src$="/images/skins/iconsets/default/complete-yes.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/complete-yes.png") !important;
+  background-color: transparent !important;
+}
+
+.status .rec,
+img[src$="/images/skins/iconsets/default/bookmark-rec.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/bookmark-rec.png") !important;
+  background-color: transparent !important;
+}
+
+.status .public,
+img[src$="/images/skins/iconsets/default/bookmark-public.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/bookmark-public.png") !important;
+  background-color: transparent !important;
+}
+
+.status .private,
+img[src$="/images/skins/iconsets/default/bookmark-private.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/bookmark-private.png") !important;
+  background-color: transparent !important;
+  font-size: 0;
+}
+
+.status .private .text {
+  background: none !important;
+}
+
+.status .hidden,
+img[src$="/images/skins/iconsets/default/bookmark-hidden.png"] {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/bookmark-hidden.png") !important;
+  background-color: transparent !important;
+}
+
+a.rss span {
+  padding: 0;
+  background: none;
+}
+
+.actions li a.rss {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  column-gap: 0.3em;
+}
+
+.actions li a.rss::before {
+  box-sizing: border-box;
+  width: 0.9em;
+  height: 0.9em;
+  border: 0;
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/rss.png");
+  background-color: transparent;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+p.kudos {
+  background: none;
+}
+
+div:has(> p.kudos)::before {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/kudos.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+img[src$="/images/lockblue.png"] {
+  content: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/lock-restricted.png");
+}
+
+img[src$="/images/lockred.png"] {
+  content: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/lock-hidden-admin.png");
+}
+
+#workskin {
+  background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/theme/borderstg.png"),
+    url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/theme/borderdr.png");
+  background-repeat: repeat-y,
+    repeat-y;
+  background-position: left top,
+    right top;
+  background-size: 12% auto,
+    12% auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
