@@ -115,27 +115,19 @@ ul.notes,
   border-bottom: 2px solid #ffffff;
 }
 
-.splash .favorite li:nth-of-type(2n+1) a {
-  background: #ffffff;
-  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
-  color: #071426;
+.splash .favorite li a {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
   font-weight: bold;
   font-variant: small-caps;
+  font-size: 110% !important;
 }
 
-.splash .favorite li:nth-of-type(2n+2) a {
-  color: #ffffff;
-  font-weight: bold;
-  font-variant: small-caps;
-  font-size: 110%;
-}
-
-.splash .favorite li:nth-of-type(2n+1) a:hover,
-.splash .favorite li:nth-of-type(2n+2) a:hover {
-  color: #ffffff;
-  font-weight: bold;
-  font-variant: small-caps;
-  background: #0D2F66;
+.splash .favorite li a:hover {
+  background: #ffffff !important;
+  color: #071426 !important;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8) !important;
 }
 
 #footer {
@@ -412,7 +404,7 @@ h4.heading.byline {
 }
 
 #greeting .user > li {
-  background: rgba(13, 14, 31, 0.92);
+  background: rgba(7, 20, 38, 0.92);
   color: #ffffff !important;
   border: 1px solid #ffffff;
   border-radius: 3px;
@@ -732,4 +724,13 @@ img[src$="/images/lockred.png"] {
   padding-left: 10%;
   padding-right: 10%;
   box-sizing: border-box;
+}
+
+a:hover {
+  color: inherit !important;
+}
+
+a.current:hover,
+#dashboard a.current:hover {
+  color: #071426 !important;
 }
