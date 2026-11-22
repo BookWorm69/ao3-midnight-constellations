@@ -20,6 +20,10 @@
   display: none;
 }
 
+#header h1.heading {
+  padding-left: 2.8em;
+}
+
 #header .heading a:focus {
   outline: 1px dashed rgba(255, 255, 255, 0.6);
   outline-offset: 4px;
@@ -136,10 +140,10 @@ ul.notes,
 }
 
 #footer {
-  background: #0D2F66;
+  background: #0a1d3a;
   color: #ffffff;
-  border-top: 3px solid #ffffff;
-  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: none;
 }
 
 #footer a,
@@ -159,10 +163,23 @@ ul.navigation.actions li a,
 .action:link,
 .actions a:link {
   background: #0D2F66;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   color: #ffffff;
-  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+  box-shadow: none;
   border-radius: 5px;
+}
+
+.actions a:hover,
+.actions input:hover,
+.actions li input[type="submit"]:hover,
+input[type="submit"]:hover,
+.actions li label:hover,
+ul.navigation.actions li a:hover,
+.action:hover {
+  background: #ffffff !important;
+  color: #071426 !important;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
 }
 
 .current,
@@ -174,9 +191,10 @@ ul.navigation.actions li a,
 }
 
 #dashboard.own {
-  border-top: 5px solid #ffffff;
-  border-bottom: 5px solid #ffffff;
-  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 0.5em;
 }
 
 #dashboard a:hover {
@@ -199,8 +217,15 @@ dl.meta {
 
 .listbox,
 fieldset fieldset.listbox {
-  background: #ffffff;
-  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+  background: #0D2F66;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+}
+
+.listbox > .heading,
+.listbox > .heading a,
+fieldset fieldset.listbox legend {
+  color: #ffffff !important;
 }
 
 form dl,
@@ -258,8 +283,14 @@ form.verbose legend,
 }
 
 li.blurb {
-  border: 1px solid #ffffff;
-  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.35);
+}
+
+li.blurb:hover {
+  border-color: #ffffff;
+  box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.85);
 }
 
 .draft {
@@ -365,13 +396,19 @@ dd.relationship.tags a {
 }
 
 .filters .expander {
-  background: url("https://64.media.tumblr.com/3c89981f933f9f57157d6dcec6fd85a7/94c6737c6db9ad60-e5/s1280x1920/f7557e617a5439c506721bd326580a0cb4c1f8d8.png") left center no-repeat;
+  background: none !important;
   color: #ffffff !important;
   font-weight: bold;
 }
 
-.filters .expanded .expander {
-  background: url("https://64.media.tumblr.com/dab095a2fd9387bc1e0c57747ba6b13f/94c6737c6db9ad60-ad/s1280x1920/c1a4e14e0565cdcac5d3e20bebac3ab440f2d607.png") left center no-repeat;
+.filters .expander::before {
+  content: "\2727  ";
+  white-space: pre;
+  color: #cfe0ff;
+}
+
+.filters .expanded .expander::before {
+  content: "\2726  ";
 }
 
 body {
@@ -698,8 +735,19 @@ p.kudos {
   background: none;
 }
 
+div:has(> p.kudos) {
+  position: relative;
+}
+
+p.kudos {
+  padding-left: 65px;
+  min-height: 55px;
+}
+
 div:has(> p.kudos)::before {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 55px;
   height: 55px;
   background-image: url("https://raw.githubusercontent.com/BookWorm69/ao3-midnight-constellations/main/icons/kudos.png");
@@ -726,8 +774,8 @@ img[src$="/images/lockred.png"] {
     right top;
   background-size: 12% auto,
     12% auto;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 13%;
+  padding-right: 13%;
   box-sizing: border-box;
 }
 
@@ -739,7 +787,6 @@ a.current:hover,
 #dashboard a.current:hover {
   color: #071426 !important;
 }
-
 .announcement .userstuff {
   background: #0D2F66 !important;
   color: #ffffff !important;
@@ -761,4 +808,356 @@ a.current:hover,
   color: #071426 !important;
   text-decoration: none;
   border-radius: 3px;
+}
+
+#chapters .chapter .preface h3.title {
+  text-align: center;
+}
+
+#chapters .chapter .preface h3.title::after {
+  display: block;
+  margin: 0.6em auto 0;
+  content: "\2500\2500\2500\2500\2500\2500   \2726  \2727  \2726   \2500\2500\2500\2500\2500\2500";
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.7em;
+  font-weight: normal;
+  text-align: center;
+  white-space: pre;
+}
+
+#chapters .userstuff.module::after,
+#chapters > .userstuff::after {
+  display: block;
+  margin: 2em auto 0;
+  content: "\2500\2500\2500\2500   \2726   \2500\2500\2500\2500";
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.8em;
+  text-align: center;
+  white-space: pre;
+}
+
+.thread li.comment {
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  border-radius: 10px;
+  background: #0a1d3a !important;
+  padding: 0.6em 0.9em;
+  margin-bottom: 0.8em;
+}
+
+ol.thread ol.thread {
+  border-left: 2px solid rgba(255, 255, 255, 0.35);
+  margin-left: 1em;
+  padding-left: 0.8em;
+}
+
+ol.thread ol.thread li.comment {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  background: #06122a !important;
+}
+
+li.comment h4.heading.byline {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: none;
+  box-shadow: none;
+  padding: 0.2em 0;
+}
+
+li.comment h4.heading.byline::before {
+  content: "\2726  ";
+  color: #cfe0ff;
+  white-space: pre;
+}
+
+li.comment h4.heading.byline .datetime {
+  font-size: 0.8em;
+  opacity: 0.75;
+}
+
+dl.work.meta dt {
+  color: #cfe0ff;
+}
+
+#workskin .preface .summary.module,
+#workskin .preface .notes.module,
+#workskin .end.notes.module {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 10px;
+  padding: 0.6em 1em;
+  margin: 1em 0;
+}
+
+#workskin .preface .summary.module {
+  background: #0a1d3a;
+}
+
+#workskin .preface .notes.module,
+#workskin .end.notes.module {
+  border-style: dashed;
+  background: transparent;
+}
+
+#workskin .summary h3.heading,
+#workskin .notes h3.heading {
+  color: #cfe0ff;
+  letter-spacing: 0.1em;
+  font-size: 0.95em;
+}
+
+#workskin .summary h3.heading::before {
+  content: "\2726  ";
+  white-space: pre;
+}
+
+#workskin .notes h3.heading::before {
+  content: "\2727  ";
+  white-space: pre;
+}
+
+#new_kudo {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+#new_kudo::before {
+  content: "Kudos \2661";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0D2F66;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  color: #ffffff;
+  z-index: 0;
+}
+
+#new_kudo:hover::before {
+  content: "Kudos \2665";
+  background: #ffffff;
+  color: #071426;
+  border-color: #ffffff;
+  box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.8);
+}
+
+#kudo_submit,
+#kudo_submit:hover,
+#kudo_submit:focus {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
+  color: transparent !important;
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+#dashboard ul li {
+  display: inline-block;
+  margin: 0.15em 0.1em;
+}
+
+#dashboard ul li a,
+#dashboard ul li span.current {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  box-sizing: border-box;
+  border-radius: 1em;
+  padding: 0.1em 0.7em;
+}
+
+#dashboard ul li a {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  box-shadow: none !important;
+}
+
+#dashboard ul li a:hover {
+  background: #ffffff !important;
+  color: #071426 !important;
+}
+
+#dashboard .current::before {
+  content: "\2726  ";
+  white-space: pre;
+}
+
+li.blurb .header h4.heading::before {
+  content: "\2726  ";
+  white-space: pre;
+  color: #cfe0ff;
+}
+
+.blurb ul.tags.commas li::after {
+  content: "";
+}
+
+.blurb ul.tags li a.tag {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 1em;
+  padding: 0 0.6em;
+  margin: 0 0.2em 0.3em 0;
+}
+
+.blurb ul.tags li.relationships a.tag {
+  background: #ffffff !important;
+  color: #071426 !important;
+  text-shadow: none;
+}
+
+.blurb dl.stats dd {
+  background: #0D2F66;
+  border-radius: 5px;
+  padding: 0 0.4em;
+}
+
+form.filters fieldset {
+  background: #0a1d3a !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+form.filters fieldset {
+  padding: 0.5em 0.4em;
+}
+
+form.filters fieldset fieldset,
+form.filters dl,
+form.filters dd {
+  background: transparent !important;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+form.filters dt,
+form.filters .expander {
+  white-space: normal;
+  overflow: visible;
+  width: auto;
+}
+
+form.filters select,
+form.filters input[type="text"] {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+form.filters dt {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+form.filters dd ul li label {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1em;
+  padding: 0 0.6em;
+  margin: 0.1em 0;
+}
+
+form.filters dd ul li label:has(input:checked) {
+  background: #ffffff;
+  color: #071426 !important;
+}
+
+#footer::before {
+  display: block;
+  padding-top: 0.6em;
+  content: "\2727   \2726   \2727   \2726   \2727";
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  white-space: pre;
+}
+
+#footer .heading {
+  color: #cfe0ff;
+}
+
+fieldset,
+form dl,
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea,
+dd.hideme,
+form blockquote.userstuff,
+dl.meta,
+.listbox,
+.listbox .index,
+.notice,
+.comment_notice,
+.kudos_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.kudos_error,
+.alert.flash,
+.draft,
+.draft .wrapper,
+#modal,
+span.replied,
+.event .userstuff,
+form.verbose legend,
+.verbose form legend,
+.ui-sortable li,
+.dynamic form,
+div.dynamic,
+.statistics .index li,
+.unread,
+#header h2,
+table,
+.autocomplete div.dropdown ul,
+#greeting .menu,
+#header .dropdown .menu,
+h4.heading.byline {
+  border-radius: 8px;
+}
+
+h4.heading.byline a {
+  color: #071426 !important;
+}
+
+li.comment h4.heading.byline a {
+  color: #ffffff !important;
+}
+
+.autocomplete li.added,
+.post .meta dd ul li.added {
+  background: #0D2F66 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1em;
+}
+
+table,
+tr,
+th,
+td,
+tbody tr:nth-of-type(even),
+tbody tr:nth-of-type(odd) {
+  background: #071426;
+  color: #ffffff;
+}
+
+form.filters dd ul li label:has(input:checked) * {
+  color: #071426 !important;
 }
