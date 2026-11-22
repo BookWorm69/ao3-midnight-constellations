@@ -1,0 +1,13 @@
+#header .heading {
+  height: 12em;
+}
+
+#header #greeting {
+  position: relative;
+  top: -0.5em;
+}
+
+#greeting .user > li {
+  font-size: 1.05em;
+  padding: 0.08em 0.3em;
+}
